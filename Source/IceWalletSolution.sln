@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceWallet.WinCore", "IceWal
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceWallet.IceDecrypt", "IceWallet.IceDecrypt\IceWallet.IceDecrypt.csproj", "{65F55931-4454-46BD-82D8-F53ED9379A87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceWallet.Engine.UnitTests", "IceWallet.Engine.UnitTests\IceWallet.Engine.UnitTests.csproj", "{5B7F271F-C2CE-4614-BA18-4841E7E8FF4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceWallet.Engine.UnitTests", "IceWallet.Engine.UnitTests\IceWallet.Engine.UnitTests.csproj", "{5B7F271F-C2CE-4614-BA18-4841E7E8FF4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console Tools", "Console Tools", "{BE77756D-47B4-4BD2-8C23-3220446B2513}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit Tests", "Unit Tests", "{1B3DC986-95D8-47BA-8CAB-4E4910309372}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +46,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65F55931-4454-46BD-82D8-F53ED9379A87} = {BE77756D-47B4-4BD2-8C23-3220446B2513}
+		{5B7F271F-C2CE-4614-BA18-4841E7E8FF4C} = {1B3DC986-95D8-47BA-8CAB-4E4910309372}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6415BA92-3035-4810-8117-5DD277351039}

@@ -76,6 +76,7 @@
 			this.BackupWalletDataLinkLabel.Name = "BackupWalletDataLinkLabel";
 			this.BackupWalletDataLinkLabel.Size = new System.Drawing.Size(103, 13);
 			this.BackupWalletDataLinkLabel.TabIndex = 16;
+			this.BackupWalletDataLinkLabel.TabStop = true;
 			this.BackupWalletDataLinkLabel.Text = "Backup Wallet Data";
 			this.BackupWalletDataLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BackupWalletDataLinkLabel_LinkClicked);
 			// 
@@ -88,6 +89,7 @@
 			this.AddButton.Name = "AddButton";
 			this.AddButton.Size = new System.Drawing.Size(103, 28);
 			this.AddButton.TabIndex = 100;
+			this.AddButton.Tag = "Action";
 			this.AddButton.Text = "+  New Coin";
 			this.AddButton.UseVisualStyleBackColor = false;
 			this.AddButton.Click += new System.EventHandler(this.AddButton_Click);

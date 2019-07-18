@@ -141,19 +141,20 @@ namespace IceWallet.WinApp
 		{
 			CenterToParent();
 
-			ConfigSkins();
+			//ConfigSkins();
+			SkinApplicator.ApplySkin(this);
 		}
 
 
 		private void ConfigSkins()
 		{
-			foreach (Control control in Controls)
-			{
-				if(control is Label)
-				{
-					(control as Label).ForeColor = SkinColors.LightGray;
-				}
-			}
+			//foreach (Control control in Controls)
+			//{
+			//	if(control is Label)
+			//	{
+			//		(control as Label).ForeColor = SkinColors.LightGray;
+			//	}
+			//}
 
 			this.BackColor = SkinColors.White;
 

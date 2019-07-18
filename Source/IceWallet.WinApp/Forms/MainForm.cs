@@ -34,7 +34,12 @@ namespace IceWallet.WinApp
 
 		private void MainForm_Load(object sender, EventArgs e)
 		{
-			ConfigSkins();
+
+			SkinApplicator.ApplySkin(this);
+
+			SkinApplicator.ApplySkin(this);
+
+			//ConfigSkins();
 			LoadConfig();
 			ConfigureGrid();
 			LoadGrid();

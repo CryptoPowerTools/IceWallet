@@ -64,6 +64,7 @@
 			this.BackupButton.Name = "BackupButton";
 			this.BackupButton.Size = new System.Drawing.Size(103, 28);
 			this.BackupButton.TabIndex = 29;
+			this.BackupButton.Tag = "action";
 			this.BackupButton.Text = "Backup";
 			this.BackupButton.UseVisualStyleBackColor = false;
 			this.BackupButton.Click += new System.EventHandler(this.BackupButton_Click);
@@ -185,6 +186,7 @@
 			this.SuccessExitButton.Name = "SuccessExitButton";
 			this.SuccessExitButton.Size = new System.Drawing.Size(103, 28);
 			this.SuccessExitButton.TabIndex = 48;
+			this.SuccessExitButton.Tag = "action";
 			this.SuccessExitButton.Text = "Exit ";
 			this.SuccessExitButton.UseVisualStyleBackColor = false;
 			this.SuccessExitButton.Click += new System.EventHandler(this.SuccessExitButton_Click);

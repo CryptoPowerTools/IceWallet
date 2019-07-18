@@ -31,7 +31,7 @@ Phase 3 Security
 - Obsfuscate the data by hiding it inside a JPG file
 
 
-
+- Tweak Gid View to be sub grouped by coin types....
 
 
 Completed Fixes

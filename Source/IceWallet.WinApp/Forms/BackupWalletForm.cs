@@ -79,6 +79,7 @@ namespace IceWallet.WinApp.Forms
 
 		private void BackupWalletForm_Load(object sender, EventArgs e)
 		{
+			SkinApplicator.ApplySkin(this);
 			CenterToParent();
 			ConfigFormState(FormState.BackupNotStarted);
 		}
@@ -139,7 +140,7 @@ namespace IceWallet.WinApp.Forms
 
 				ConfigFormState(FormState.BackupSuccess);
 			}
-			catch(Exception exception)
+			catch(Exception)
 			{
 
 			}
