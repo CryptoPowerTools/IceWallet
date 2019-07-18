@@ -1,0 +1,48 @@
+MVP To Do
+------------------------------
+
+
+
+- Fix Grid to disply empty rows to give uniform look.
+- Sort Grid with Newest entries on TOP
+
+
+Phase 2  Encrypted File Format Solidification
+-------------------------------------------------
+- Create the Final File Format Hardened
+
+- Generate BTC if it is the selected Symbol
+- Generate Other coins keys (LTC, Horizen etc....)
+- Compile to Single EXE
+- Create Config File
+
+
+
+
+
+Phase 3 Security
+-------------------------------
+- Wse a virtual keyboard window to allow input by clicking a mouse to prevent keystroke capture attacks
+
+- Provide an additional PIN in addition to the paraphrase. It is recommend that the PIN not be stored with the paraphrase or better yet memorized
+
+- Triple encrypt the data for added security
+
+- Obsfuscate the data by hiding it inside a JPG file
+
+
+
+
+
+Completed Fixes
+----------------------------------------
+
+- Implent 'past' button to past private and public key (do not allow typing)
+- Implement Add new coin label and Hints to go darker when selected
+- Implement Add new coin Cancel Button
+_ Implement Exit and prompt to back up when dirty
+- Fix MainWindow  Tips state  / Add new coin / Make Backup when the file is changed
+- Implement Make Backup on dirty state
+- Show Summary of entry below the grid that updates upon selection change.
+- Fix window size make non resizable
+- Right Click Copy Private Key / Public Key / Full Details

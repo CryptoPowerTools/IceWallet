@@ -1,0 +1,41 @@
+
+
+IceWallet the safest cold storage to secure your crypto assests. IceWallet is the ONLY wallet that is 100% guaranteed way to secure your crypto assets by creating a rock solid private and secure self decrypting file called IceWalletData.zip.
+
+This file is self decrypting and is encrypted with multiple layers of encryption to ensure it is absolutely IMPOSSIBLE that it can be decrypted without the Paraphrase which is only known to the owner of the wallet.
+
+
+
+Better Than Paper Wallets
+ - Can be lost
+ - Can be destroyed
+ - Can be...
+
+
+Better Than Hardware Wallets
+ - Can be lost
+ - Can have a hardware failure
+ 
+
+
+One you create your SECURE IceWallet you can put a copy on your keychain USB and carry it with you at all times.
+You can copy your SECURE IceWallet to a public cloud drive such as GoogleDrive, AmazonDrive, DropBox, OneDrive or copy IceWallet to all of the above. You can copy IceWallet on a USB drive and stick it in your safty deposit box or even give a copy to a friend or family member.
+
+IceWallet is 100% secure so redundancy is a MUST to secure your cryptocurrency! The more copies of it you have in a variety of places the more redundant your IceWallet becomes. There is not other cold storage solution where all your crypto is in a single file that can be copied like any other backup! 
+
+When the time comes to withdrawl your funds and you must access your PRIVATE KEY you can either use the IceWallet client application or the IceWallet itself contains a self extracting mechanism that only requires your highly SECURE paraphrase that ONLY you know!
+
+With IceWallet copied to multiple locations you will NEVER loose your cryptocurrency assests!
+
+
+
+
+
+We are so confident in the safety and security IceWallet that we have made public a wallet that contains 10 BTC just waiting for the hacker that can crack the code!
+
+
+
+
+Instructions
+-----------------------
+It is recommended to have a dedicated laptop that has been un plugged from the Internet. This will protect the assests from a remote attack that could capture keystrokes or screen snapshopts.

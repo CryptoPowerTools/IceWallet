@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceWallet.WinApp", "IceWallet.WinApp\IceWallet.WinApp.csproj", "{F557E6DB-037A-41D0-A715-2E1C0C5624F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceWallet.Engine", "IceWallet.Engine\IceWallet.Engine.csproj", "{735B5AF8-86C4-433B-8A01-CB139EABC916}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceWallet.WinCore", "IceWallet.WinCore\IceWallet.WinCore.csproj", "{6E7CE70A-5991-4379-B690-90139F3EE627}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IceWallet.IceDecrypt", "IceWallet.IceDecrypt\IceWallet.IceDecrypt.csproj", "{65F55931-4454-46BD-82D8-F53ED9379A87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IceWallet.Engine.UnitTests", "IceWallet.Engine.UnitTests\IceWallet.Engine.UnitTests.csproj", "{5B7F271F-C2CE-4614-BA18-4841E7E8FF4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F557E6DB-037A-41D0-A715-2E1C0C5624F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F557E6DB-037A-41D0-A715-2E1C0C5624F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F557E6DB-037A-41D0-A715-2E1C0C5624F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F557E6DB-037A-41D0-A715-2E1C0C5624F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{735B5AF8-86C4-433B-8A01-CB139EABC916}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{735B5AF8-86C4-433B-8A01-CB139EABC916}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{735B5AF8-86C4-433B-8A01-CB139EABC916}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{735B5AF8-86C4-433B-8A01-CB139EABC916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E7CE70A-5991-4379-B690-90139F3EE627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E7CE70A-5991-4379-B690-90139F3EE627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E7CE70A-5991-4379-B690-90139F3EE627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E7CE70A-5991-4379-B690-90139F3EE627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65F55931-4454-46BD-82D8-F53ED9379A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65F55931-4454-46BD-82D8-F53ED9379A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65F55931-4454-46BD-82D8-F53ED9379A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65F55931-4454-46BD-82D8-F53ED9379A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B7F271F-C2CE-4614-BA18-4841E7E8FF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B7F271F-C2CE-4614-BA18-4841E7E8FF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B7F271F-C2CE-4614-BA18-4841E7E8FF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B7F271F-C2CE-4614-BA18-4841E7E8FF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6415BA92-3035-4810-8117-5DD277351039}
+	EndGlobalSection
+EndGlobal

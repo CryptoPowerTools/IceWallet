@@ -1,0 +1,22 @@
+
+
+
+172647  Black
+245A80  Dark Main Color  
+95D3F8  Light Main Color
+
+
+
+59657D  Dark Gray
+D1D4D9  Light Gray
+F5F2E9  White
+
+
+CDE4B1 Go Green
+873537 Error Red
+
+
+
+
+
+
