@@ -158,10 +158,10 @@ namespace IceWallet.WinApp
 
 			this.BackColor = SkinColors.White;
 
-			SaveButton.BackColor = SkinColors.GoGreen;
+			//SaveButton.BackColor = SkinColors.GoGreen;
 
-			AddSymbolLinkLabel.ForeColor = SkinColors.DarkMainColor;
-			GenerateLinkLabel.ForeColor = SkinColors.DarkMainColor;
+			//AddSymbolLinkLabel.ForeColor = SkinColors.DarkMainColor;
+			//GenerateLinkLabel.ForeColor = SkinColors.DarkMainColor;
 
 
 		}

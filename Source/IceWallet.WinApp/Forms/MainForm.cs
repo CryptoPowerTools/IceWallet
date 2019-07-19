@@ -37,8 +37,8 @@ namespace IceWallet.WinApp
 
 			SkinApplicator.ApplySkin(this);
 
-			SkinApplicator.ApplySkin(this);
 
+			
 			//ConfigSkins();
 			LoadConfig();
 			ConfigureGrid();
@@ -50,45 +50,43 @@ namespace IceWallet.WinApp
 		{
 			if(CoreContext.WalletEngine.WalletData.Entries.Count < 1)
 			{
-				AddCoinTipLabel.ForeColor = SkinColors.ErrorRed;
+				AddCoinTipLabel.ForeColor = SkinColors.Red;
 				AddCoinTipLabel.Visible = true;
 			}
 			else
 			{
-				AddCoinTipLabel.ForeColor = SkinColors.LightGray;
 				AddCoinTipLabel.Visible = false;
 			}
 
 			if (CoreContext.WalletEngine.IsBackupRequired == true)
 			{
 				BackupWalletTipLabel.Visible = true;
-				BackupWalletTipLabel.ForeColor = SkinColors.ErrorRed;
+				BackupWalletTipLabel.ForeColor = SkinColors.Red;
 			}
 			else
 			{
-				BackupWalletTipLabel.Visible = false;
-				BackupWalletTipLabel.ForeColor = SkinColors.LightMainColor;
+				BackupWalletTipLabel.Visible = false;				
 			}
 		}
 
 		private void ConfigSkins()
 		{			
-			AddCoinTipLabel.ForeColor = SkinColors.LightGray;
-			BackupWalletTipLabel.ForeColor = SkinColors.LightGray;
+			//AddCoinTipLabel.ForeColor = SkinColors.LightGray;
+			//BackupWalletTipLabel.ForeColor = SkinColors.LightGray;
 
-			AddButton.BackColor = SkinColors.LightMainColor;
-			this.BackColor = SkinColors.White;
+			//AddButton.BackColor = SkinColors.LightMainColor;
+			//this.BackColor = SkinColors.White;
 
-			PrintPaperWalletButton.ForeColor = SkinColors.LightGray;
-			PrintPaperWalletButton.Enabled = false;
+			//PrintPaperWalletButton.ForeColor = SkinColors.LightGray;
+			//PrintPaperWalletButton.Enabled = false;
 
-			BackupWalletDataLinkLabel.ForeColor = SkinColors.DarkMainColor;
-			BackupWalletDataLinkLabel.ActiveLinkColor = SkinColors.DarkMainColor;
-			BackupWalletDataLinkLabel.VisitedLinkColor = SkinColors.LightGray;
+			//BackupWalletDataLinkLabel.ForeColor = SkinColors.DarkMainColor;
+			//BackupWalletDataLinkLabel.ActiveLinkColor = SkinColors.DarkMainColor;
+			//BackupWalletDataLinkLabel.VisitedLinkColor = SkinColors.LightGray;
 
-			// Grid Skins Colors
-			WalletEntriesGridView.BackgroundColor = SkinColors.LightMainColor;
-			WalletEntriesGridView.GridColor = SkinColors.DarkMainColor;
+			//// Grid Skins Colors
+			//WalletEntriesGridView.BackgroundColor = SkinColors.LightMainColor;
+			//WalletEntriesGridView.GridColor = SkinColors.DarkMainColor;
 		}
 
 		private void LoadConfig()

@@ -36,7 +36,7 @@ namespace IceWallet.Engine
 			{
 				WalletData = JsonSerializer.ReadFromJsonFile<WalletData>(WalletDataFileName);
 			}
-			catch(FileNotFoundException ex)
+			catch(FileNotFoundException)
 			{
 				// File does not exist yet do just create an empty data file
 				WalletData = new WalletData();

@@ -28,7 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.CancelButton = new System.Windows.Forms.Button();
+			this.CancelBackupButton = new System.Windows.Forms.Button();
 			this.BackupButton = new System.Windows.Forms.Button();
 			this.BackupLocationTextBox = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
@@ -43,17 +43,17 @@
 			this.SuccessExitButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// CancelButton
+			// CancelBackupButton
 			// 
-			this.CancelButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.CancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.CancelButton.Location = new System.Drawing.Point(432, 151);
-			this.CancelButton.Name = "CancelButton";
-			this.CancelButton.Size = new System.Drawing.Size(103, 28);
-			this.CancelButton.TabIndex = 30;
-			this.CancelButton.Text = "Cancel";
-			this.CancelButton.UseVisualStyleBackColor = true;
-			this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+			this.CancelBackupButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.CancelBackupButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.CancelBackupButton.Location = new System.Drawing.Point(432, 151);
+			this.CancelBackupButton.Name = "CancelBackupButton";
+			this.CancelBackupButton.Size = new System.Drawing.Size(103, 28);
+			this.CancelBackupButton.TabIndex = 30;
+			this.CancelBackupButton.Text = "Cancel";
+			this.CancelBackupButton.UseVisualStyleBackColor = true;
+			this.CancelBackupButton.Click += new System.EventHandler(this.CancelButton_Click);
 			// 
 			// BackupButton
 			// 
@@ -207,7 +207,7 @@
 			this.Controls.Add(this.BrowseButton);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.BackupLocationTextBox);
-			this.Controls.Add(this.CancelButton);
+			this.Controls.Add(this.CancelBackupButton);
 			this.Controls.Add(this.BackupButton);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "BackupWalletForm";
@@ -219,7 +219,7 @@
 		}
 
 		#endregion
-		private System.Windows.Forms.Button CancelButton;
+		private System.Windows.Forms.Button CancelBackupButton;
 		private System.Windows.Forms.Button BackupButton;
 		private System.Windows.Forms.TextBox BackupLocationTextBox;
 		private System.Windows.Forms.Label label1;

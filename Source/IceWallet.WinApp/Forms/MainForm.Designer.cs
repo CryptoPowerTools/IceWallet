@@ -72,6 +72,7 @@
 			// BackupWalletDataLinkLabel
 			// 
 			this.BackupWalletDataLinkLabel.AutoSize = true;
+			this.BackupWalletDataLinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
 			this.BackupWalletDataLinkLabel.Location = new System.Drawing.Point(673, 12);
 			this.BackupWalletDataLinkLabel.Name = "BackupWalletDataLinkLabel";
 			this.BackupWalletDataLinkLabel.Size = new System.Drawing.Size(103, 13);
@@ -162,6 +163,7 @@
 			// ExitButton
 			// 
 			this.ExitButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+			this.ExitButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.ExitButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.ExitButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.ExitButton.Location = new System.Drawing.Point(684, 466);

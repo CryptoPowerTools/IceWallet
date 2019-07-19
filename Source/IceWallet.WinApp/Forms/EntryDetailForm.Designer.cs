@@ -35,7 +35,7 @@
 			this.EntryTypeComboBox = new System.Windows.Forms.ComboBox();
 			this.AddSymbolLinkLabel = new System.Windows.Forms.LinkLabel();
 			this.SaveButton = new System.Windows.Forms.Button();
-			this.CancelButton = new System.Windows.Forms.Button();
+			this.CancelAddButton = new System.Windows.Forms.Button();
 			this.PublicAddressHelpLabel = new System.Windows.Forms.Label();
 			this.PrivateKeyHelpLabel = new System.Windows.Forms.Label();
 			this.SymbolHelpLabel = new System.Windows.Forms.Label();
@@ -102,11 +102,13 @@
 			// AddSymbolLinkLabel
 			// 
 			this.AddSymbolLinkLabel.AutoSize = true;
+			this.AddSymbolLinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
 			this.AddSymbolLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
 			this.AddSymbolLinkLabel.Location = new System.Drawing.Point(427, 22);
 			this.AddSymbolLinkLabel.Name = "AddSymbolLinkLabel";
 			this.AddSymbolLinkLabel.Size = new System.Drawing.Size(63, 13);
 			this.AddSymbolLinkLabel.TabIndex = 20;
+			this.AddSymbolLinkLabel.TabStop = true;
 			this.AddSymbolLinkLabel.Text = "Add Symbol";
 			// 
 			// SaveButton
@@ -118,21 +120,22 @@
 			this.SaveButton.Name = "SaveButton";
 			this.SaveButton.Size = new System.Drawing.Size(103, 28);
 			this.SaveButton.TabIndex = 6;
+			this.SaveButton.Tag = "action";
 			this.SaveButton.Text = "Save";
 			this.SaveButton.UseVisualStyleBackColor = false;
 			this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
 			// 
-			// CancelButton
+			// CancelAddButton
 			// 
-			this.CancelButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.CancelButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-			this.CancelButton.Location = new System.Drawing.Point(242, 231);
-			this.CancelButton.Name = "CancelButton";
-			this.CancelButton.Size = new System.Drawing.Size(103, 28);
-			this.CancelButton.TabIndex = 7;
-			this.CancelButton.Text = "Cancel";
-			this.CancelButton.UseVisualStyleBackColor = true;
-			this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+			this.CancelAddButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.CancelAddButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+			this.CancelAddButton.Location = new System.Drawing.Point(242, 231);
+			this.CancelAddButton.Name = "CancelAddButton";
+			this.CancelAddButton.Size = new System.Drawing.Size(103, 28);
+			this.CancelAddButton.TabIndex = 7;
+			this.CancelAddButton.Text = "Cancel";
+			this.CancelAddButton.UseVisualStyleBackColor = true;
+			this.CancelAddButton.Click += new System.EventHandler(this.CancelButton_Click);
 			// 
 			// PublicAddressHelpLabel
 			// 
@@ -167,11 +170,13 @@
 			// GenerateLinkLabel
 			// 
 			this.GenerateLinkLabel.AutoSize = true;
+			this.GenerateLinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
 			this.GenerateLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
 			this.GenerateLinkLabel.Location = new System.Drawing.Point(427, 52);
 			this.GenerateLinkLabel.Name = "GenerateLinkLabel";
 			this.GenerateLinkLabel.Size = new System.Drawing.Size(51, 13);
 			this.GenerateLinkLabel.TabIndex = 300;
+			this.GenerateLinkLabel.TabStop = true;
 			this.GenerateLinkLabel.Text = "Generate";
 			// 
 			// CoinSymbolLabel
@@ -304,7 +309,7 @@
 			this.Controls.Add(this.SymbolHelpLabel);
 			this.Controls.Add(this.PrivateKeyHelpLabel);
 			this.Controls.Add(this.PublicAddressHelpLabel);
-			this.Controls.Add(this.CancelButton);
+			this.Controls.Add(this.CancelAddButton);
 			this.Controls.Add(this.SaveButton);
 			this.Controls.Add(this.AddSymbolLinkLabel);
 			this.Controls.Add(this.EntryTypeComboBox);
@@ -330,7 +335,7 @@
 		private System.Windows.Forms.ComboBox EntryTypeComboBox;
 		private System.Windows.Forms.LinkLabel AddSymbolLinkLabel;
 		private System.Windows.Forms.Button SaveButton;
-		private System.Windows.Forms.Button CancelButton;
+		private System.Windows.Forms.Button CancelAddButton;
 		private System.Windows.Forms.Label PublicAddressHelpLabel;
 		private System.Windows.Forms.Label PrivateKeyHelpLabel;
 		private System.Windows.Forms.Label SymbolHelpLabel;

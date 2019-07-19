@@ -63,8 +63,8 @@ namespace IceWallet.WinApp.Forms
 					SuccessTipLabel.Visible = true;
 					this.Size = new Size(Size.Width, 382);
 					BackupButton.Enabled = false;
-					BackupButton.BackColor = SkinColors.LightGray;
-					CancelButton.BackColor = SkinColors.LightGray;
+					BackupButton.BackColor = SkinColors.FormButtonBackColor;
+					CancelBackupButton.BackColor = SkinColors.FormButtonBackColor;
 
 
 					return;

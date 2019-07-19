@@ -23,28 +23,44 @@ namespace IceWallet.WinCore.Skins
 				if (ctl is Button)
 				{
 					Button button = ctl as Button;
+					button.FlatStyle = FlatStyle.Flat;
+
 					if ((button.Tag != null) && (string.Compare(button.Tag.ToString(), "action", true) == 0))
 					{
-						button.BackColor = SkinColors.ActionControlBackColor;
-						button.ForeColor = SkinColors.ButtonForeColor;
+						button.BackColor = SkinColors.FormActionButtonBackColor;
+						button.ForeColor = SkinColors.FormActionButtonForeColor;
+						button.FlatAppearance.MouseOverBackColor = SkinColors.FormActionButtonHoverBackColor;
 					}
 					else
 					{
-						button.BackColor = SkinColors.ButtonBackColor;
-						button.ForeColor = SkinColors.ButtonForeColor;
+						button.BackColor = SkinColors.FormButtonBackColor;
+						button.ForeColor = SkinColors.FormButtonForeColor;
+						button.FlatAppearance.MouseOverBackColor = SkinColors.FormControlBackColor;
 					}
 
-
+					// Make Flat Style
+					button.FlatAppearance.BorderColor = SkinColors.FormButtonBorderColor;
+					//button.FlatAppearance.MouseOverBackColor = SkinColors.FormControlBackColor;
 				}
 				else if (ctl is Label)
 				{
-					(ctl as Label).ForeColor = SkinColors.LabelForeColor;
+					if(ctl is LinkLabel)
+					{
+						(ctl as LinkLabel).LinkColor = SkinColors.FormLinkLabelForeColor;
+						(ctl as LinkLabel).BackColor = SkinColors.FormLinkLabelBackColor;
+						(ctl as LinkLabel).ActiveLinkColor = SkinColors.FormLinkLabelActiveForeColor;
+						//(ctl as LinkLabel).ForeColor = SkinColors.FormLinkLabelForeColor;
+						continue;
+					}
+									   
+					(ctl as Label).ForeColor = SkinColors.FormLabelForeColor;
+					(ctl as Label).BackColor = SkinColors.FormLabelBackColor;
 
 
 				}
 				else if (ctl is LinkLabel)
 				{
-					(ctl as LinkLabel).LinkColor = SkinColors.LinkLabelColor;
+					
 
 
 
@@ -52,8 +68,8 @@ namespace IceWallet.WinCore.Skins
 				else if (ctl is TextBox)
 				{
 					TextBox textBox = ctl as TextBox;
-					textBox.ForeColor = SkinColors.TextControlForeColor;
-
+					textBox.ForeColor = SkinColors.FormEditControlForeColor;
+					textBox.BackColor = SkinColors.FormEditControlBackColor;
 
 				}
 
