@@ -2,6 +2,7 @@
 using IceWallet.WinCore;
 using IceWallet.WinCore.Skins;
 using System;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Reflection;
@@ -20,7 +21,7 @@ namespace IceWallet.WinApp.Forms
 
 		private string _locationFolder = "";
 		private FormState _formState = FormState.BackupNotStarted;
-
+		public string TitleBarText { get; set; }
 
 		public string LocationFolder
 		{
@@ -36,10 +37,20 @@ namespace IceWallet.WinApp.Forms
 		}
 
 
-		public BackupWalletForm()
+		private BackupWalletForm()
 		{
 			InitializeComponent();
 		}
+
+		public static void Show(string titleBarText = "Backup Wallet")
+		{
+			BackupWalletForm form = new BackupWalletForm
+			{
+				TitleBarText = titleBarText,
+			};
+			form.ShowDialog();
+		}
+
 
 		private void ConfigFormState(FormState state)
 		{
@@ -82,6 +93,7 @@ namespace IceWallet.WinApp.Forms
 			SkinApplicator.ApplySkin(this);
 			CenterToParent();
 			ConfigFormState(FormState.BackupNotStarted);
+			Text = TitleBarText;
 		}
 
 		private void BrowseButton_Click(object sender, EventArgs e)
@@ -135,14 +147,20 @@ namespace IceWallet.WinApp.Forms
 		{
 			try
 			{
+				if(string.IsNullOrWhiteSpace(BackupLocationTextBox.Text))
+				{
+					throw new Exception("You must enter a location");
+				}
+
 				CoreContext.WalletEngine.BackupWalletData(LocationFolder);
-
-
 				ConfigFormState(FormState.BackupSuccess);
-			}
-			catch(Exception)
-			{
 
+				BackupLocationLabel.Text = LocationFolder;
+
+			}
+			catch(Exception exception)
+			{
+				ErrorForm.Show(exception.Message, exception);				
 			}
 		}
 
@@ -159,6 +177,17 @@ namespace IceWallet.WinApp.Forms
 		private void BackupLocationTextBox_Leave(object sender, EventArgs e)
 		{
 			LocationFolder = BackupLocationTextBox.Text;
+		}
+
+		private void OpenBackupLocationLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+		{
+			string locationFolder = LocationFolder;
+			string args = string.Format("/e, /select, \"{0}\"", locationFolder);
+
+			ProcessStartInfo info = new ProcessStartInfo();
+			info.FileName = "explorer";
+			info.Arguments = args;
+			Process.Start(info);
 		}
 	}
 }

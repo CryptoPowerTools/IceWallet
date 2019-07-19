@@ -41,6 +41,8 @@
 			this.checkBox3 = new System.Windows.Forms.CheckBox();
 			this.PrivateKeyHelpLabel = new System.Windows.Forms.Label();
 			this.SuccessExitButton = new System.Windows.Forms.Button();
+			this.OpenBackupLocationLinkLabel = new System.Windows.Forms.LinkLabel();
+			this.BackupLocationLabel = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// CancelBackupButton
@@ -139,7 +141,7 @@
 			// 
 			this.SuccessTipLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.SuccessTipLabel.ForeColor = System.Drawing.Color.DarkRed;
-			this.SuccessTipLabel.Location = new System.Drawing.Point(12, 249);
+			this.SuccessTipLabel.Location = new System.Drawing.Point(12, 242);
 			this.SuccessTipLabel.Name = "SuccessTipLabel";
 			this.SuccessTipLabel.Size = new System.Drawing.Size(542, 47);
 			this.SuccessTipLabel.TabIndex = 44;
@@ -150,7 +152,7 @@
 			// 
 			this.SuccessImportantLabel.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.SuccessImportantLabel.ForeColor = System.Drawing.Color.Black;
-			this.SuccessImportantLabel.Location = new System.Drawing.Point(179, 211);
+			this.SuccessImportantLabel.Location = new System.Drawing.Point(27, 303);
 			this.SuccessImportantLabel.Name = "SuccessImportantLabel";
 			this.SuccessImportantLabel.Size = new System.Drawing.Size(175, 27);
 			this.SuccessImportantLabel.TabIndex = 45;
@@ -191,11 +193,37 @@
 			this.SuccessExitButton.UseVisualStyleBackColor = false;
 			this.SuccessExitButton.Click += new System.EventHandler(this.SuccessExitButton_Click);
 			// 
+			// OpenBackupLocationLinkLabel
+			// 
+			this.OpenBackupLocationLinkLabel.AutoSize = true;
+			this.OpenBackupLocationLinkLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
+			this.OpenBackupLocationLinkLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+			this.OpenBackupLocationLinkLabel.Location = new System.Drawing.Point(12, 218);
+			this.OpenBackupLocationLinkLabel.Name = "OpenBackupLocationLinkLabel";
+			this.OpenBackupLocationLinkLabel.Size = new System.Drawing.Size(117, 13);
+			this.OpenBackupLocationLinkLabel.TabIndex = 49;
+			this.OpenBackupLocationLinkLabel.TabStop = true;
+			this.OpenBackupLocationLinkLabel.Text = "Open Backup Location";
+			this.OpenBackupLocationLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OpenBackupLocationLinkLabel_LinkClicked);
+			// 
+			// BackupLocationLabel
+			// 
+			this.BackupLocationLabel.AutoSize = true;
+			this.BackupLocationLabel.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BackupLocationLabel.ForeColor = System.Drawing.Color.Gray;
+			this.BackupLocationLabel.Location = new System.Drawing.Point(135, 217);
+			this.BackupLocationLabel.Name = "BackupLocationLabel";
+			this.BackupLocationLabel.Size = new System.Drawing.Size(0, 14);
+			this.BackupLocationLabel.TabIndex = 50;
+			this.BackupLocationLabel.TextAlign = System.Drawing.ContentAlignment.TopRight;
+			// 
 			// BackupWalletForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(566, 343);
+			this.Controls.Add(this.BackupLocationLabel);
+			this.Controls.Add(this.OpenBackupLocationLinkLabel);
 			this.Controls.Add(this.SuccessExitButton);
 			this.Controls.Add(this.PrivateKeyHelpLabel);
 			this.Controls.Add(this.checkBox3);
@@ -211,7 +239,6 @@
 			this.Controls.Add(this.BackupButton);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Name = "BackupWalletForm";
-			this.Text = " ";
 			this.Load += new System.EventHandler(this.BackupWalletForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -232,5 +259,7 @@
 		private System.Windows.Forms.CheckBox checkBox3;
 		private System.Windows.Forms.Label PrivateKeyHelpLabel;
 		private System.Windows.Forms.Button SuccessExitButton;
+		private System.Windows.Forms.LinkLabel OpenBackupLocationLinkLabel;
+		private System.Windows.Forms.Label BackupLocationLabel;
 	}
 }

@@ -44,6 +44,8 @@ namespace IceWallet.WinApp
 			ConfigureGrid();
 			LoadGrid();
 			ConfigUIState();
+			UpdateEntryDetailTextBox();
+					
 		}
 
 		private void ConfigUIState()
@@ -200,23 +202,29 @@ namespace IceWallet.WinApp
 
 		private void BackupWalletDataLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
 		{
-			BackupWalletForm backupForm = new BackupWalletForm();
-			backupForm.ShowDialog();
+			ShowBackupForm();			
+		}
 
-
-
+		private void ShowBackupForm(string titleBarMessage = "Backup Wallet")
+		{
+			BackupWalletForm.Show(titleBarMessage);
+			ConfigUIState();
 		}
 
 		private void WalletEntriesGridView_RowEnter(object sender, DataGridViewCellEventArgs e)
 		{
 			if(e.RowIndex > 0)
 			{
-				var selectedEntry = WalletEntriesGridView.SelectedRows[0].DataBoundItem as WalletEntry;
-				string details = FormatWalletEntryToText(selectedEntry);
-				EntryDetailTextBox.Text = details;
+				UpdateEntryDetailTextBox();
+
 			}
+		}
 
-
+		private void UpdateEntryDetailTextBox()
+		{
+			var selectedEntry = WalletEntriesGridView.SelectedRows[0].DataBoundItem as WalletEntry;
+			string details = FormatWalletEntryToText(selectedEntry);
+			EntryDetailTextBox.Text = details;
 		}
 
 		private void WalletEntriesGridView_MouseDown(object sender, MouseEventArgs e)
@@ -274,7 +282,8 @@ namespace IceWallet.WinApp
 		{
 			if(CoreContext.WalletEngine.IsBackupRequired)
 			{
-				MessageBox.Show("You need to backup");
+				ShowBackupForm("You must BACKUP your Wallet before Exiting!");
+				Close();
 			}
 			else
 			{
