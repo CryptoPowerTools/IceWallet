@@ -45,7 +45,11 @@ namespace IceWallet.WinApp
 			LoadGrid();
 			ConfigUIState();
 			UpdateEntryDetailTextBox();
-					
+
+			//this.Icon = Properties.Resources.AddNewEntry;
+			//AddButton.Image = Properties.Resources.AddNewEntry.ToBitmap();
+			//AddButton.ImageAlign = ContentAlignment.MiddleLeft;
+
 		}
 
 		private void ConfigUIState()

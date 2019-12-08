@@ -84,6 +84,7 @@
 			// AddButton
 			// 
 			this.AddButton.BackColor = System.Drawing.Color.PaleGreen;
+			this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.AddButton.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.AddButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.AddButton.Location = new System.Drawing.Point(12, 7);

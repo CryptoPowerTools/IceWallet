@@ -39,3 +39,50 @@ We are so confident in the safety and security IceWallet that we have made publi
 Instructions
 -----------------------
 It is recommended to have a dedicated laptop that has been un plugged from the Internet. This will protect the assests from a remote attack that could capture keystrokes or screen snapshopts.
+
+
+
+
+
+
+
+Selling Points
+----------------------------
+- Generate Keys in a Secure, Private and air gapped way.
+
+
+Password / Passcode
+
+
+
+
+
+QUESTION -----------------------------------------------------------------------------------
+Brookster 777
+3 days ago (edited)
+@Hashoshi   You sound very knowledgeable I have a question for you or anybody that can give some feedback.  
+
+Instead of using a hardware wallet wouldn’t be just as safe to create a highly encrypted file on a laptop disconnected from the Internet and then you can take that file and copy it as many places as possible in the cloud on a USB drive and a keychain in a safety deposit box and because it’s encrypted nobody could ever get inside the file??? It just seems like these hardware wallets are so overkill and complicated compared to using a good encryption program.
+
+As you know it’s easy to create private keys off-line on the disconnected laptop... I picked up a cheap laptop for 100 bucks that I use for all of my key generation and will never connected to the Internet
+
+ANSWER --------------------------------------------------------------------------
+Great question! Thanks for the compliments, first and foremost. In terms of your question: 
+
+In theory, you can create an encrypted file on your laptop with a 256-bit or better encryption mechanism that holds your private keys. However, this becomes impractical because you would have to decrypt that file and connect to the web anytime you need to sign a transaction. That’s where hardware wallets are great, because they hold the keys in an air gapped location that only operate as signers. Many wallets don’t even have connectivity and simply sign the empty transaction body that gets sent from your other internet connected device. Hardware wallets are also designed to generate keys securely, which is often where most hacks occur with replacement, prediction or theft of keys at the time of creation. By creating the key on an airgapped device that has preloaded firmware that has limited functionality, you are setting yourself up as best as possible for secure key gen. Even bettter if you’re using a non deterministic key generation algorithm with solid entropy. 
+
+The issue with phones and laptops, even if airgapped is that they can be boot loaded with relative ease, and with big drives they can hold large malware packages. Hardware wallets are built with the minimum space available for firmware, so that sideloading malware is harder (not perfect AT ALL though). You never want to put sensitive information on the cloud BTW - not always secure and you’re putting your trust in a third party. 
+
+The encrypted file approach does not work for a replacement for hardware wallets because key generation and signing operations are impractical and not as secure in practice. If, however, you have an airgapped and malware free computer with networking disabled, you can create an encrypted file that holds your seed phrase(s) for your hardware wallets in a secure way using your same approach outlined above. That’s a solid way to keep copies without buying steel backups or writing on paper, and if it did fall into the wrong hands, it would be hard for a hacker to crack your seed phrase. 
+
+Overall, hardware wallets are a necessary evil, but some are better than others in both security AND user experience. If you don’t like seed phrases and stuff, the BC Vault is great wallet with nondeterministic key gen, no seed phrases, and encrypted backups by default -> https://youtu.be/NaZ3n8MMyMI
+
+Thanks for watching and for your support
+
+
+
+
+
+
+
+

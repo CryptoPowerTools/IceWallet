@@ -9,8 +9,24 @@ MVP To Do
 
 Phase 2  Encrypted File Format Solidification
 -------------------------------------------------
-- Create the Final File Format Hardened
+- Backup as encrypted Zip File (Standard format that user can unzip)
+- Delete entries from Main Form 
+	-Are you sure?  [click yes]
+	Please confirm I want to DELETE the wallet named "My Wallet". 
+	This cannot be undone and without my private key 
+	I will not longer have access to my funds! 
+	type the words DELETE in the box "DELETE"
+	- [Click DELETE]
 
+
+
+
+
+
+
+
+
+- Create the Final File Format Hardened
 - Generate BTC if it is the selected Symbol
 - Generate Other coins keys (LTC, Horizen etc....)
 - Compile to Single EXE
